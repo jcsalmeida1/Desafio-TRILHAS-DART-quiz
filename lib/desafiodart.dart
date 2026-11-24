@@ -24,7 +24,7 @@ const questoes =[
   
   
   ),
-  
+
   Questao(
     enunciado: 'Qual é o nome do protagonista da série "Breaking Bad"?',
     alternativas: ['Jesse Pinkman', 'Walter White', 'Saul Goodman', 'Gus Fring'],
@@ -45,7 +45,7 @@ const questoes =[
     enunciado: 'Qual é o nome do brinquedo cowboy de Toy Story?',
     alternativas: ['Rex', 'Buzz Lightyear', 'Woody', 'Slinky Dog'],
     respostaCorreta: 'C',
-  );
+  )
 
 
 
