@@ -41,7 +41,7 @@ void main() {
   for (int i = 0; i < questoes.length; i++) {
     print('----------------------------------------------------------');
     print('Questão número ${i + 1}:');
-    print('${questoes[i].enunciado}');
+    print(questoes[i].enunciado);
     print('');
     print('Alternativas:');
     print('----------------------------------------------------------');
