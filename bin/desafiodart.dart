@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:desafiodart/desafiodart.dart' as desafiodart;
+import 'package:desafiodart/desafiodart.dart';
 
 void main() {
   const letras = ['A', 'B', 'C', 'D'];
@@ -40,8 +40,11 @@ void main() {
   // Percorre a lista de perguntas
   for (int i = 0; i < questoes.length; i++) {
     print('----------------------------------------------------------');
-    print('Questão número ${i + 1}: ${questoes[i].enunciado}');
+    print('Questão número ${i + 1}:');
+    print('${questoes[i].enunciado}');
+    print('');
     print('Alternativas:');
+    print('----------------------------------------------------------');
 
     // Apresenta as alternativas
     for (int j = 0; j < questoes[i].alternativas.length; j++) {
@@ -68,7 +71,9 @@ void main() {
       }
 
       print('Resposta inválida!');
+      print('----------------------------------------------------------');
       print('Digite uma resposta válida (A, B, C ou D).');
+      print('----------------------------------------------------------');
     }
 
     // Verifica se a resposta está correta
@@ -79,6 +84,7 @@ void main() {
       final indiceCorreto = letras.indexOf(questoes[i].respostaCorreta);
 
       print('Resposta incorreta!');
+
       print(
         'A resposta correta era '
         '${questoes[i].respostaCorreta}) '
@@ -87,7 +93,7 @@ void main() {
     }
 
     print('Pontuação atual: $acertos');
-    print('');
+    print('----------------------------------------------------------');
   }
 
   // Resultado final
@@ -97,7 +103,6 @@ void main() {
 
   print('Jogador: $nome');
   print('Pontuação final: $acertos de ${questoes.length} perguntas.');
-  print('');
 
   // Mensagem conforme o desempenho
   if (acertos == questoes.length) {
